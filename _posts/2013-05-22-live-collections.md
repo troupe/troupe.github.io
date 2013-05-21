@@ -18,16 +18,6 @@ Our initial implementation used the now-defunct now.js for realtime client notif
 
 For this demo, we'll show you how to build your own LiveCollection implementation.
 
-(delete)
-
-Backbone is a hugely popular framework which helps tackle some of the complexity of building modern Javascript client-side applications.
-
-A modern single-page javascript application is likely to remain open for a long period without being refreshed. With Google Mail, Twitter and Facebook, users have become accustomed to sites that remain up-to-date without having to be refreshed.
-
-So is there a way that we can easily extend Backbone.JS to support real-time collection updates?
-
-(delete)
-
 Technologies
 ---------------------
 * __[Faye](http://faye.jcoglan.com/)__
@@ -38,13 +28,15 @@ Technologies
 * Down below: __Node.js__ / __Express.js__ / __MongoDB__
 
 
-For the demonstration, we're using [TodoMVC's Backbone.js implementation](http://todomvc.com/architecture-examples/backbone/), with a few small changes:
+For the demonstration, we're using [TodoMVC's](http://todomvc.com/architecture-examples/backbone/) Backbone.js, with a few small changes:
 
 * LocalStorage has been switched for a REST backend.
 * The REST backend is implemented as a Node.js http server connecting to a Mongodb backend, using the technologies mentioned above:
 
 ![Technology stack 1](/images/live-collections-before.png)
 
+
+![Technology stack 2](/images/live-collections-after.png)
 
 Why Faye?
 ---------
@@ -58,19 +50,64 @@ There are many alternatives to Faye that we could've chosen - [Engine.io](https:
 * _A well documented network protocol_: Faye is built on top of the well-established and open [Bayeux](http://svn.cometd.com/trunk/bayeux/bayeux.html) protocol. Being open means ObjectiveC, Android, Ruby and Javascript implementations exist and should be able to interoperate (*theoretically!*).
 * _High-level messaging interface_: Faye provides a right-level API that allows us to focus on publishing messages to channels, while Faye deals with client handshaking, reconnections, etc
 * _Fallback_: in the real-world of outdated browsers, websocket implementations are notoriously flakey. Faye falls back to comet-style implementations when web sockets aren't behaving correctly.
-* _Easy_: Faye is easy to understand and easy to use.
+* _Easy_: Faye is super easy to understand and a pleasure to use!
 
-(delete)
-The purpose of this article is to show how real-time live collections can be added to an existing Node.js / Backbone.js application with a minimum of effort.
-
-(delete)
+{% gist 5621243 %}
 
 
-![Technology stack 2](/images/live-collections-after.png)
+Using a REST-like scheme for Pub/Sub Channels
+---------------------------------------------
+
+Backbone Collections use REST URL endpoints and CRUD operations are performed using `POST`, `PUT` and `DELETE` operations. Faye uses channels, not URL endpoints, and passes messages. We need a way of mapping between these two domains. Luckily, it's quite easy to do:
+
+For each LiveCollection model, we will use a separate channel. The name of the channel matches the relative REST base-url. For example, for the resource `http://server/api/todos/`, updates will be published on the channel `/api/todos/`.
+
+The messages passed over the channel are simple JSON messages. All messages have the form:
+
+	{
+		method: 'POST/PUT/DELETE',
+		body: { ... }
+	}
+
+Where the method relates to whether the operation is a create, update or delete and the body is the object associated with the event.
+
+<table>
+	<thead>
+		<tr>
+			<th>Operation</th>
+			<th>REST (client to server)</th>
+			<th>Faye (broadcast, server to clients)</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td>
+			<td><code>GET /api/todos/</code></td>
+			<td><code>client.subscribe(‘/api/todos/’, ...)</code></td>
+		</tr>
+
+		<tr>
+			<td>Create</td>
+			<td><code>POST /api/todos/</code></td>
+			<td><code>{ method:“POST”, body: {...} }</code></td>
+		</tr>
+
+		<tr>
+			<td>Update</td>
+			<td><code>PUT /api/todos/id</code></td>
+			<td><code>{ method:“PUT”, body: {...} }</code></td>
+		</tr>
+
+		<tr>
+			<td>Delete</td>
+			<td><code>DELETE /api/todos/id</code></td>
+			<td><code>{ method:“DELETE”, body: {...} }</code></td>
+		</tr>
+
+	</tbody>
+</table>
 
 
-First take on the server
--------------------------
 
-The node.js server is almost completely contained in index.js.
+
 
