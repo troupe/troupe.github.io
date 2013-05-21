@@ -1,13 +1,8 @@
-markdown: rdiscount
 pygments: true
 permalink: /posts/:title
-auto: true
-rdiscount:
-  extensions: [smart]
-
-name: Zach Holman
-url: http://zachholman.com
-description: A fantastic blog that is fantastic.
-twitter: holman
-github: holman
-gravatar_url: http://gravatar.com/avatar/6f63cde8b16b035280ca615f621a6c8c
+name: Troupe Engineering Blog
+url: http://troupe.github.io
+description: Engineering stuff at Troupe.
+twitter: WeAreTroupe
+github: Troupe
+gravatar_url: http://gravatar.com/avatar/2644d6233d2c210258362f7f0f5138c2
