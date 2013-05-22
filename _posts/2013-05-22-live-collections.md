@@ -14,11 +14,11 @@ __Our aim: create a real-time drop-in replacement for Backbone collections that 
 
 We were already using Mongoose.js for Mongo persistence, so it made sense for us to leverage the Mongoose middleware concept to generate CRUD notifications.
 
-Our initial implementation used the now-defunct now.js for realtime client notifications, but switched to Faye as our requirements became clearer.
+Our initial implementation used the now-defunct now.js for realtime client notifications, but we switched to Faye as our requirements became clearer.
 
 For this demo, we'll show you how to build your own LiveCollection implementation.
 
-Try the live demo on [nodejitsu](http://faye-live-demo.jit.su/)
+Try the live demo we've depoloyed on [nodejitsu](http://faye-live-demo.jit.su/).
 
 TL;DR
 =====================
@@ -145,7 +145,7 @@ Here Be Dragons
 
 Obviously we've had to gloss over a few details; here's a few things to look out for:
 
-1. _Views need to respond to non-UI change events_: You may need to make changes if your view code responds to UI changes instead of collection/model changes. In the TodoMVC example, the delete code needed to be modified in order for push deleted to show in the UI. We highly recommend [Marionette.js](http://marionettejs.com/) to ease pain here.
+1. _Views need to respond to non-UI-driven change events_: You may need to make changes if your view code responds to UI changes instead of collection/model changes. In the TodoMVC example, the remove model code needed to be modified in order for push deleted to show in the UI. We highly recommend [Marionette.js](http://marionettejs.com/)  to ease pain here.
 
 1. _Event ordering_: Sometimes the client will receive Faye events before the RESTful operation that caused the event has completed, other times not. Don't make any assumptions about the order and timing of events. Read how we deal with some of these problems in the next section.
 
@@ -158,23 +158,23 @@ Obviously we've had to gloss over a few details; here's a few things to look out
 Drama with Duplicates: Dealing with unexpected timing issues
 ------------------------------------------------------------
 
-The `_createEvent()`, `_updateEvent()` and `_removeEvent()` methods are fairly straightforward, but one issue that we'll discuss here is the problem of duplicates that occurs sometimes when saving a new object (create), and how we deal with this issue.
+The LiveCollection's `_createEvent()`, `_updateEvent()` and `_removeEvent()` methods are fairly straightforward, but one issue that we'll discuss here is the problem of duplicates that occurs sometimes when saving a new object (create), and how we deal with this issue.
 
-Sometimes, the order of events is not what you might expect. For example, take a look at the following sequence when a client saves a new model to the collection:
+As mentioned, sometimes the order of events is not what you might expect. For example, take a look at the following sequence when a client saves a new model to the collection:
 
 1. HTTP POST request is initiated with `{ id: null, title: 'Hello' }`, client (asynchronously) awaits a response.
-1. Client receives create event from server with `{ id: X, title: 'Hello' }`
+1. On Faye, the client receives create event from server with `{ id: X, title: 'Hello' }`
 1. HTTP response is received:  `{ id: X, title: 'Hello' }`
 
 At step 2, the client does not know whether the event is related to the outstanding POST event, or is an event from another client. It's only once the HTTP POST response is received that the client is able to
-tell that the event was in fact for the corresponding operation, by matching the on the id. If the create was for the same object, the event can safely be ignored. If not, the created object should be inserted into the collection.
+tell that the event was in fact for the corresponding operation, by matching on the id. If the create was for the same object, the event can safely be ignored. If not, the created object should be inserted into the collection.
 
 We use the following strategy to deal with this situation:
 * If there are no outstanding POST operations, always insert the object immediately.
 * Otherwise, wait until all the outstanding POST operations have completed.
 * Once they have completed, check if the id of the event matches one of the newly sync'ed objects.
 * If it does, ignore the event
-* If not, insert the event's body into the collection (the create must have been from another client)
+* If not, insert the event's body into the collection - the create must have been from another client.
 
 This may seem fairly complicated, but the code is actually quite simple:
 
