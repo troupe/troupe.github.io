@@ -83,6 +83,12 @@ h1 i, h2 i, h3 i, h4 i, h5 i {
 	border-bottom:2px solid #72c02c;
 }
 
+.trpAddress {
+	color: rgb(218, 218, 218);
+	font-family:'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
 /*Purchase*/
 .purchase {
 	padding:30px 0 20px;
@@ -395,9 +401,13 @@ blockquote:hover {
 .footer {
 	margin-top:40px;
 	padding:20px 10px;
-	background:#585f69;
-	color:#dadada;
+	background-color: #494259;
 }
+
+.footer {
+		font-family:'Open Sans', sans-serif;
+}
+
 .footer h1,
 .footer h2,
 .footer h3,

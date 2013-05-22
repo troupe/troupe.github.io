@@ -18,7 +18,7 @@ Our initial implementation used the now-defunct now.js for realtime client notif
 
 For this demo, we'll show you how to build your own LiveCollection implementation.
 
-Try the live demo we've depoloyed on [nodejitsu](http://faye-live-demo.jit.su/).
+Try the live demo we've depoloyed on [nodejitsu](http://faye-live-demo.jit.su/) and take a look at the source on [GitHub](http://github.com/Troupe/faye-live-demo).
 
 TL;DR
 =====================
