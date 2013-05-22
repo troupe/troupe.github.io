@@ -6,9 +6,8 @@ title: Live Collections using Backbone.js, Faye and Node
 Why LiveCollections?
 =====================
 
-[Troupe](http://trou.pe) is a realtime collaborative application. Having a real-time, push-based application is essential.
-At the same time, we were keen to leverage the power of Backbone.js, so we decided to extend Backbone with
-real-time LiveCollection capabilities to enable realtime push in Backbone collections.
+[Troupe](http://trou.pe) is a realtime collaborative application. Having a real-time, push-based application, where updates are automatically reflected in the client, is essential. At the same time, we were keen to leverage the power of Backbone.js, so we decided to extend Backbone with
+real-time Live Collection capabilities to enable realtime push in Backbone collections.
 
 __Our aim: create a real-time drop-in replacement for Backbone collections that plays nicely with Node.js__
 
@@ -29,7 +28,7 @@ With only a few moving parts, and minimal changes to your Backbone application, 
 Technologies Used
 ---------------------
 
-This demo uses __[Faye](http://faye.jcoglan.com/)__, __[Backbone.js](http://backbonejs.org/)__, __[Mongoose.js](http://mongoosejs.com/)__, __[Baucis](https://github.com/wprl/baucis)__, __Node.js__, __Express.js__ and __MongoDB__ (phew!)
+This demo uses __[Faye](http://faye.jcoglan.com/)__, __[Backbone.js](http://backbonejs.org/)__, __[Mongoose.js](http://mongoosejs.com/)__, __[Baucis](https://github.com/wprl/baucis)__, __Node.js__, __Express.js__ and __MongoDB__ (phew!). Baucis generates REST interfaces from Mongoose schemas, and we used it to keep the demo small. There is no requirement for it.
 
 For a front-end, we're using [TodoMVC's](http://todomvc.com/architecture-examples/backbone/) Backbone.js example, with a few changes:
 
@@ -111,6 +110,17 @@ The method attribute indicates create (POST), update (PUT) or delete (DELETE) an
 	</tbody>
 </table>
 
+Changes to the Client
+=====================
+
+On the client, we'll extend the `Backbone.Collection` class to listen to events from Faye. The class subscribes to it's Faye channel in it's constructor, and messages are handled in the `_fayeEvent()` method.
+
+{% gist 5621496 %}
+
+Then we change the base class of the Todo collection to extend the LiveCollection, like this:
+
+{% gist 5623171 %}
+
 Changes to the Server to Implement Push
 =======================================
 
@@ -126,16 +136,6 @@ Unfortunately, in the `post('save')` middleware you can't easily tell if the sav
 
 {% gist 5621437 %}
 
-Changes to the Client
-=====================
-
-On the client, we'll extend the `Backbone.Collection` class to listen to events from Faye. The class subscribes to it's Faye channel in it's constructor, and messages are handled in the `_fayeEvent()` method.
-
-{% gist 5621496 %}
-
-Then we change the base class of the Todo collection to extend the LiveCollection, like this:
-
-{% gist 5623171 %}
 
 And we're done!
 
@@ -150,6 +150,8 @@ Obviously we've had to gloss over a few details; here's a few things to look out
 1. _Event ordering_: Sometimes the client will receive Faye events before the RESTful operation that caused the event has completed, other times not. Don't make any assumptions about the order and timing of events. Read how we deal with some of these problems in the next section.
 
 1. _Security_: Obviously this demo doesn't use security, but it's something you'll need to consider carefully.
+
+1. _Partitioning_: In this demo all clients get all change events. In a real-world system, this is usually not the case. Follow RESTful principals so that different partitions have different endpoints and this problem is fairly easy to workaround.
 
 1. _Dodgy websockets_: Websockets are awesome when they work. Faye deals with much of the pain, but not all of it. Expect weird edge-cases when dealing with bad network connections (or mobile connections), iOS, computers that have awoken from sleep and other scenarios.
 
@@ -176,7 +178,7 @@ We use the following strategy to deal with this situation:
 * If it does, ignore the event
 * If not, insert the event's body into the collection - the create must have been from another client.
 
-This may seem fairly complicated, but the code is actually quite simple:
+This is how we do that in code:
 
 {% gist 5621667 %}
 
@@ -193,7 +195,7 @@ About the Authors
 
 __Mike Bartlett__ is co-founder of Troupe.
 
-<a href="https://twitter.com/mydigitalself" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @twitterapi</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<a href="https://twitter.com/mydigitalself" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @mydigitalself</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 <p style="clear:both"><br></p>
 
@@ -201,5 +203,4 @@ __Mike Bartlett__ is co-founder of Troupe.
 
 __Andrew Newdigate__ is co-founder of Troupe, where he spends most of his days writing Node.js, Javascript apps and Objective-C. He's worked as a software engineer since 1996. Loves travel, photography and snowboarding and is a new dad.
 
-<a href="https://twitter.com/suprememoocow" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @twitterapi</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<a href="https://twitter.com/suprememoocow" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @suprememoocow</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
