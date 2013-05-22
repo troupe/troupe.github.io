@@ -193,7 +193,7 @@ About the Authors
 
 <img alt="Andrew Newdigate" src="http://www.gravatar.com/avatar/a8b4506ba466eecadc9f4c1b46d400d0.jpg" style="float:left; padding-right: 1em">
 
-__Mike Bartlett__ is co-founder of Troupe. Product guy with enough technical knowledge to be useful yet dangerous. Brought video calling to the world at Skype. When he's not dabbling with technology, he's either pontificating over fine wine, tasting ales or snowboarding. Normally not at the same time.
+__Mike Bartlett__ is co-founder of Troupe. Product guy with enough technical knowledge to be useful yet dangerous. Brought video calling to the world at Skype. When he's not dabbling with technology he's either cooking, pontificating over fine wine, tasting ales or snowboarding. Normally not at the same time.
 
 <a href="https://twitter.com/mydigitalself" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @mydigitalself</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
