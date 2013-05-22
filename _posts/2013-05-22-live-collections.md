@@ -6,7 +6,7 @@ title: Live Collections using Backbone.js, Faye and Node
 Why LiveCollections?
 =====================
 
-Troupe is a realtime collaborative application. Having a real-time, push-based application is essential.
+[Troupe](http://trou.pe) is a realtime collaborative application. Having a real-time, push-based application is essential.
 At the same time, we were keen to leverage the power of Backbone.js, so we decided to extend Backbone with
 real-time LiveCollection capabilities to enable realtime push in Backbone collections.
 
