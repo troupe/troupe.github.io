@@ -6,7 +6,7 @@ title: Live Collections using Backbone.js, Faye and Node
 Why LiveCollections?
 =====================
 
-[Troupe](http://trou.pe) is a realtime collaborative application. Having a real-time, push-based application, where updates are automatically reflected in the client, is essential. At the same time, we were keen to leverage the power of Backbone.js, so we decided to extend Backbone with
+[Troupe](http://trou.pe) is a realtime collaborative application. Having a real-time, push-based application, where updates are automatically reflected in the client, is essential. We were keen to leverage the power of Backbone.js, so we decided to extend Backbone with
 real-time Live Collection capabilities to enable realtime push in Backbone collections.
 
 __Our aim: create a real-time drop-in replacement for Backbone collections that plays nicely with Node.js__
@@ -28,7 +28,7 @@ With only a few moving parts, and minimal changes to your Backbone application, 
 Technologies Used
 ---------------------
 
-This demo uses __[Faye](http://faye.jcoglan.com/)__, __[Backbone.js](http://backbonejs.org/)__, __[Mongoose.js](http://mongoosejs.com/)__, __[Baucis](https://github.com/wprl/baucis)__, __Node.js__, __Express.js__ and __MongoDB__ (phew!). Baucis generates REST interfaces from Mongoose schemas, and we used it to keep the demo small. There is no requirement for it.
+This demo uses __[Faye](http://faye.jcoglan.com/)__, __[Backbone.js](http://backbonejs.org/)__, __[Mongoose.js](http://mongoosejs.com/)__, __[Baucis](https://github.com/wprl/baucis)__, __[Node.js](http://nodejs.org)__, __[Express.js](http://expressjs.com/)__ and __[MongoDB](http://www.mongodb.org/)__ (phew!). Baucis generates REST interfaces from Mongoose schemas, and we used it to keep the demo small. There is no requirement for it.
 
 For a front-end, we're using [TodoMVC's](http://todomvc.com/architecture-examples/backbone/) Backbone.js example, with a few changes:
 
@@ -193,7 +193,7 @@ About the Authors
 
 <img alt="Andrew Newdigate" src="http://www.gravatar.com/avatar/a8b4506ba466eecadc9f4c1b46d400d0.jpg" style="float:left; padding-right: 1em">
 
-__Mike Bartlett__ is co-founder of Troupe.
+__Mike Bartlett__ is co-founder of Troupe. Product guy with enough technical knowledge to be useful yet dangerous. Brought video calling to the world at Skype. When he's not dabbling with technology, he's either pontificating over fine wine, tasting ales or snowboarding. Normally not at the same time.
 
 <a href="https://twitter.com/mydigitalself" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @mydigitalself</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
