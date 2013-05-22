@@ -124,7 +124,7 @@ Then we change the base class of the Todo collection to extend the LiveCollectio
 Changes to the Server to Implement Push
 =======================================
 
-Firstly, we'll need to attach a Faye server instance to our httpServer instance, like this:
+Firstly, we'll need to attach a Faye server instance to our httpServer instance, like so:
 
 {% gist 5621371 %}
 
