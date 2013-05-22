@@ -1,29 +1,23 @@
 ---
 layout: layout
 ---
+<div class="blog margin-bottom-30">
+  <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
+  <ul class="unstyled inline blog-info">
+      <li><i class="icon-calendar"></i> {{ page.date | date: "%B %e, %Y" }}</li>
+      <li><i class="icon-pencil"></i> Diana Anderson</li>
+      <li><i class="icon-comments"></i> <a href="#">24 Comments</a></li>
+    </ul>
+  <ul class="unstyled inline blog-tags">
+        <li>
+            <i class="icon-tags"></i>
+            <a href="#">Technology</a>
+            <a href="#">Education</a>
+            <a href="#">Internet</a>
+            <a href="#">Media</a>
+        </li>
+    </ul>
+    <div class="blog-img"><img src="/assets/img/posts/1.jpg" alt="" /></div>
+    {{ content }}
 
-<section class="content">
-  <h1>
-    <a href="{{ page.url }}">{{ page.title }}</a>
-  </h1>
-
-  <section class="byline">
-    {{ page.date | date: "%B %e, %Y" }}
-  </section>
-
-  {{ content }}
-
-  <!-- TODO: bio here -->
-  <section class="meta">
-    <h3>Discussion, links, and tweets</h3>
-    <section class="copy">
-      <a href="https://twitter.com/{{ site.twitter }}" target="_blank">
-        <img src="{{ site.gravatar_url }}?s=142" height="50" width="50" />
-      </a>
-
-      <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="{{ site.twitter }}">Tweet</a>
-      <a href="http://twitter.com/{{ site.twitter }}" class="twitter-follow-button" data-show-count="false">Follow @{{ site.twitter }}</a>
-      <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-    </section>
-  </section>
-</section>
+</div><!--/blog-->

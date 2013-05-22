@@ -1,58 +1,208 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<!--[if IE 7]> <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <title>
-    {% if page.title %}
-      {{ page.title }} &ndash;
-    {% endif %}
-    {{ site.name }}
-  </title>
+    <title>
+      {% if page.title %}
+        {{ page.title }} &ndash;
+      {% endif %}
+      {{ site.name }}
+    </title>
 
-  <meta name="author" content="{{ site.name }}" />
-  <meta name="description" content="{{ site.description }}" />
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
-
-  <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
-  <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
-  <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
-  <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
-  <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script type="text/javascript" src="/js/application.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/menu/style-menu.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/assets/css/style_responsive.css">
+    <link rel="stylesheet" href="/assets/css/animate.css">
+    <link rel="stylesheet" href="/assets/css/effects.css">
+    <link rel="stylesheet" href="/assets/flags/css/bootstrap-formhelpers-countries.flags.css">
+    <link rel="stylesheet" href="/assets/fancybox/source/jquery.fancybox.css">
+    <link rel="stylesheet" href="/assets/elasticslides/css/style.css"  type="text/css" />
+    <link rel="stylesheet" href="/assets/elastislide/css/elastislide.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/elastislide/css/custom.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/flexslider/flexslider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/assets/parallax-slider/css/parallax-slider.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.css">
 </head>
 
 <body>
-  <section class="sidebar">
-    <a href="/">
-      <img src="{{ site.gravatar_url }}?s=150" height="75" width="75" class="avatar" />
-    </a>
+<!--=== Top ===-->
+<div id="top">
+</div><!--/top-->
 
-    <section class="name">
-      <a href="/">
-        <span id="fname">{{ site.name|split:' '|first }}</span>
-        <span id="lname">{{ site.name|split:' '|last }}</span>
-      </a>
-    </section>
+<!--=== Header ===-->
+<div id="header">
+    <div class="container">
+        <!-- Logo -->
+        <div id="logo">
+            <a href="/"><img src="/assets/img/logo.png" alt="Logo"></a>
+        </div><!-- /logo -->
 
-    <section class="meta">
-      <a href="https://github.com/{{ site.github }}" target="_blank"><img src="/images/github.png" /></a>
-      <a href="https://twitter.com/{{ site.twitter }}" target="_blank"><img src="/images/twitter.png"></a>
-      <a href="/atom.xml"><img src="/images/rss.png" /></a>
-    </section>
+      <!-- Menu -->
+        <div class="navbar">
+            <div class="navbar-inner">
+            </div><!-- /navbar-inner -->
+        </div><!-- /navbar -->
 
-    <section class="sections">
-      <ul>
-        <li><a href="/about.html">about</a></li>
-        <li><a href="/">posts</a></li>
-      </ul>
-    </section>
-  </section>
+    </div><!-- /container -->
+</div><!-- /header -->
 
-  {{ content }}
+<!--=== Content part ===-->
+<div id="body">
+  <div class="breadcrumbs margin-bottom-20">
+      <div class="container">
+            <h1 class="color-green pull-left">Item Pege</h1>
+            <ul class="pull-right breadcrumb">
+                <li><a href="index.html">Home</a> <span class="divider">/</span></li>
+                <li><a href="blog.html">Blog</a> <span class="divider">/</span></li>
+                <li class="active">Item</li>
+            </ul>
+        </div><!--/container-->
+    </div><!--/breadcrumbs-->
+
+  <div class="container">
+    <div class="row-fluid blog-page blog-item">
+
+            <!-- Left Sidebar -->
+          <div class="span9">
+              {{ content }}
+            <hr />
+            </div><!--/span9-->
+
+            <!-- Right Sidebar -->
+          <div class="span3">
+
+              <!-- Blog Latest Tweets -->
+
+              <a class="twitter-timeline" href="https://twitter.com/WeAreTroupe" data-widget-id="337144062157144065">Tweets by @WeAreTroupe</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+            </div><!--/span3-->
+        </div><!--/row-fluid-->
+  </div><!--/container-->
+
+</div><!--/body-->
+
+<!--=== Footer ===-->
+<div class="footer">
+  <div class="container">
+
+    <div class="row-fluid">
+      <div class="span4">
+                <!-- About -->
+            <div class="headline"><h3>About</h3></div>
+        <p class="margin-bottom-25">Unify is an incredibly beautiful responsive Bootstrap Template for corporate and creative professionals.</p>
+
+              <!-- Monthly Newsletter -->
+            <div class="headline"><h3>Monthly Newsletter</h3></div>
+        <p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
+        <form class="form-inline">
+          <div class="input-append">
+            <input type="email" placeholder="Email Address" class="span8 border-radius-none" name="email">
+            <button class="btn-u">Sign Up</button>
+          </div>
+        </form>
+      </div><!--/span4-->
+
+      <div class="span4">
+                <div class="posts">
+                    <div class="headline"><h3>Recent Blog Entries</h3></div>
+                    <dl class="dl-horizontal">
+                        <dt><a href="#"><img src="/assets/img/sliders/elastislide/6.jpg" alt="" /></a></dt>
+                        <dd>
+                            <p><a href="#">Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template</a></p>
+                        </dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                    <dt><a href="#"><img src="/assets/img/sliders/elastislide/10.jpg" alt="" /></a></dt>
+                        <dd>
+                            <p><a href="#">Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template</a></p>
+                        </dd>
+                    </dl>
+                    <dl class="dl-horizontal">
+                    <dt><a href="#"><img src="/assets/img/sliders/elastislide/11.jpg" alt="" /></a></dt>
+                        <dd>
+                            <p><a href="#">Anim moon officia Unify is an incredibly beautiful responsive Bootstrap Template</a></p>
+                        </dd>
+                    </dl>
+                </div>
+      </div><!--/span4-->
+
+      <div class="span4">
+              <!-- Monthly Newsletter -->
+            <div class="headline"><h3>Contact Us</h3></div>
+                <address>
+          25, Lorem Lis Street, Orange <br />
+          California, US <br />
+          Phone: 800 123 3456 <br />
+          Fax: 800 123 3456 <br />
+          Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
+                </address>
+
+                <!-- Stay Connected -->
+            <div class="headline"><h3>Stay Connected</h3></div>
+                <ul class="social-icons">
+                    <li><a href="#" data-original-title="Feed" class="rss"></a></li>
+                    <li><a href="#" data-original-title="Facebook" class="facebook"></a></li>
+                    <li><a href="#" data-original-title="Twitter" class="twitter"></a></li>
+                    <li><a href="#" data-original-title="Goole Plus" class="googleplus"></a></li>
+                    <li><a href="#" data-original-title="Pinterest" class="pintrest"></a></li>
+                    <li><a href="#" data-original-title="Linkedin" class="linkedin"></a></li>
+                    <li><a href="#" data-original-title="Vimeo" class="vimeo"></a></li>
+                </ul>
+      </div><!--/span4-->
+    </div><!--/row-fluid-->
+
+  </div><!--/container-->
+</div><!--/footer-->
+
+<!--=== copyright ===-->
+<div class="copyright">
+  <div class="container">
+
+    <div class="row-fluid">
+      <div class="span8">
+              <p>2012 &copy; Unify. ALL Rights Reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+      </div>
+      <div class="span4">
+        <a href="index.html"><img src="/assets/img/logo1.png" class="pull-right" alt="" /></a>
+      </div>
+    </div><!--/row-fluid-->
+
+  </div><!--/container-->
+</div><!--/copyright-->
+
+<!-- JS and jQuery -->
+<script type="text/javascript" src="/assets/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="/assets/js/modernizr.custom.17475.js"></script>
+<script type="text/javascript" src="/assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/fancybox/source/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="/assets/elasticslides/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/assets/elasticslides/js/jquery.eislideshow.js"></script>
+<script type="text/javascript" src="/assets/elastislide/js/jquery.elastislide.js"></script>
+<script type="text/javascript" src="/assets/flexslider/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="/assets/parallax-slider/js/modernizr.custom.28468.js"></script>
+<script type="text/javascript" src="/assets/parallax-slider/js/jquery.cslider.js"></script>
+<script type="text/javascript" src="/assets/js/back-to-top.js"></script>
+<script type="text/javascript" src="/assets/js/app.js"></script>
+<!--[if lt IE 9]>
+  <script src="/assets/js/respond.js"></script>
+<![endif]-->
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    App.init();
+});
+</script>
 </body>
-
 </html>
+

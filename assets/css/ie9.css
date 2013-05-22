@@ -1,0 +1,14 @@
+span.link_post,
+span.zoom {
+	top:inherit;
+	margin-top:inherit;
+	position:inherit;
+	}
+span.link_post{
+	margin-left:0;
+}
+
+span.zoom{
+	margin-left:0;
+	margin-top:32px;
+}	
