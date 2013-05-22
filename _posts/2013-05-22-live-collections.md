@@ -186,3 +186,20 @@ In Summary
 
 With a small amount of effort you can adapt your existing Backbone.js application to use Live Collections. Just watch out for gotchas. Give it a try and let us know how it goes.
 
+About the Authors
+=================
+
+<img alt="Andrew Newdigate" src="http://www.gravatar.com/avatar/a8b4506ba466eecadc9f4c1b46d400d0.jpg" style="float:left; padding-right: 1em">
+
+__Mike Bartlett__ is co-founder of Troupe.
+
+<a href="https://twitter.com/mydigitalself" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @twitterapi</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<p style="clear:both"><br></p>
+
+<img alt="Andrew Newdigate" src="http://www.gravatar.com/avatar/2644d6233d2c210258362f7f0f5138c2.png" style="float:left; padding-right: 1em">
+
+__Andrew Newdigate__ is co-founder of Troupe, where he spends most of his days writing Node.js, Javascript apps and Objective-C. He's worked as a software engineer since 1996. Loves travel, photography and snowboarding and is a new dad.
+
+<a href="https://twitter.com/suprememoocow" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @twitterapi</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
