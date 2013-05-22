@@ -2,22 +2,10 @@
 layout: layout
 ---
 <div class="blog margin-bottom-30">
-  <h3><a href="{{ page.url }}">{{ page.title }}</a></h3>
   <ul class="unstyled inline blog-info">
       <li><i class="icon-calendar"></i> {{ page.date | date: "%B %e, %Y" }}</li>
-      <li><i class="icon-pencil"></i> Diana Anderson</li>
-      <li><i class="icon-comments"></i> <a href="#">24 Comments</a></li>
     </ul>
-  <ul class="unstyled inline blog-tags">
-        <li>
-            <i class="icon-tags"></i>
-            <a href="#">Technology</a>
-            <a href="#">Education</a>
-            <a href="#">Internet</a>
-            <a href="#">Media</a>
-        </li>
-    </ul>
-    <div class="blog-img"><img src="/assets/img/posts/1.jpg" alt="" /></div>
+
     {{ content }}
 
 </div><!--/blog-->
