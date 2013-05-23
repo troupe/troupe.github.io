@@ -198,6 +198,8 @@ With a small amount of effort you can adapt your existing Backbone.js applicatio
 
 Comments on [Hacker News](https://news.ycombinator.com/item?id=5756549).
 
+[Upvote on HN](https://news.ycombinator.com/submitlink?u=http://engineering.troupe.co/posts/live-collections/&t=Live%20Collections%20using%20Backbone.js,%20Faye%20and%20Node)
+
 About the Authors
 =================
 
