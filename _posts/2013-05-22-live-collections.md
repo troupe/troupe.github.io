@@ -196,6 +196,8 @@ In Summary
 
 With a small amount of effort you can adapt your existing Backbone.js application to use Live Collections. Just watch out for gotchas. Give it a try and let us know how it goes.
 
+Comments on [Hacker News](https://news.ycombinator.com/item?id=5756549).
+
 About the Authors
 =================
 
