@@ -115,7 +115,7 @@ The method attribute indicates create (POST), update (PUT) or delete (DELETE) an
 Changes to the Client
 =====================
 
-On the client, we'll extend the `Backbone.Collection` class to listen to events from Faye. The class subscribes to it's Faye channel in it's constructor, and messages are handled in the `_fayeEvent()` method.
+On the client, we'll extend the `Backbone.Collection` class to listen to events from Faye. The class subscribes to its Faye channel in its constructor, and messages are handled in the `_fayeEvent()` method.
 
 {% gist 5621496 %}
 
