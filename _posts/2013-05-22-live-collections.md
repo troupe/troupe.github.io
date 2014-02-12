@@ -203,7 +203,6 @@ Comments on [Hacker News](https://news.ycombinator.com/item?id=5756549).
 [Upvote on HN](https://news.ycombinator.com/submitlink?u=http://engineering.troupe.co/posts/live-collections/&t=Live%20Collections%20using%20Backbone.js,%20Faye%20and%20Node)
 
 <a href="https://twitter.com/share" class="twitter-share-button" data-text="Real-time collections using #Backbonejs, #Faye and #Nodejs" data-via="WeAreTroupe">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 About the Authors
 =================
@@ -212,7 +211,7 @@ About the Authors
 
 __Mike Bartlett__ is co-founder of Troupe. Product guy with enough technical knowledge to be useful yet dangerous. Brought video calling to the world at Skype. When he's not dabbling with technology he's either cooking, pontificating over fine wine, tasting ales or snowboarding. Normally not at the same time.
 
-<a href="https://twitter.com/mydigitalself" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @mydigitalself</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<a href="https://twitter.com/mydigitalself" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @mydigitalself</a>
 
 <p style="clear:both"><br></p>
 
@@ -220,4 +219,4 @@ __Mike Bartlett__ is co-founder of Troupe. Product guy with enough technical kno
 
 __Andrew Newdigate__ is co-founder of Troupe, where he spends most of his days writing Node.js, Javascript apps and Objective-C. He's worked as a software engineer since 1996. Loves travel, photography and snowboarding and is a new dad.
 
-<a href="https://twitter.com/suprememoocow" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @suprememoocow</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<a href="https://twitter.com/suprememoocow" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @suprememoocow</a>
