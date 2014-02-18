@@ -84,7 +84,7 @@ h1 i, h2 i, h3 i, h4 i, h5 i {
 }
 
 
-.logo {
+#logo {
 	 display: inline-block;
 	 width: 196px;
 	 height: 64px;

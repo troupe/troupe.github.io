@@ -1,8 +1,9 @@
 pygments: true
 permalink: /posts/:title
-name: Troupe Engineering Blog
-url: http://troupe.github.io
-description: Engineering stuff at Troupe.
-twitter: WeAreTroupe
-github: Troupe
-gravatar_url: http://gravatar.com/avatar/2644d6233d2c210258362f7f0f5138c2
+name: Gitter Engineering Blog
+url: http://gitterHQ.github.io
+description: Engineering stuff at Gitter.
+twitter: gitchat
+github: gitterHQ
+gravatar_url: http://gravatar.com/avatar/3af08c35936d0088e67fe7cd33bb61f0
+
