@@ -1,4 +1,4 @@
-Troupe.github.io
+gitterHQ.github.io
 ================
 
-Troupe engineering blog
+Gitter engineering blog
