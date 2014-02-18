@@ -8,7 +8,7 @@ title: Live Collections using Backbone.js, Faye and Node
 Why LiveCollections?
 =====================
 
-[Troupe](http://trou.pe) is a realtime collaborative application. Having a real-time, push-based application, where updates are automatically reflected in the client, is essential. We were keen to leverage the power of Backbone.js, so we decided to extend Backbone with
+[Gitter](https://gitter.im) is a realtime collaborative application. Having a real-time, push-based application, where updates are automatically reflected in the client, is essential. We were keen to leverage the power of Backbone.js, so we decided to extend Backbone with
 real-time Live Collection capabilities to enable realtime push in Backbone collections.
 
 __Our aim: create a real-time drop-in replacement for Backbone collections that plays nicely with Node.js__
@@ -19,7 +19,7 @@ Our initial implementation used the now-defunct now.js for realtime client notif
 
 For this demo, we'll show you how to build your own LiveCollection implementation.
 
-Try the live demo we've depoloyed on [nodejitsu](http://faye-live-demo.jit.su/) and take a look at the source on [GitHub](http://github.com/Troupe/faye-live-demo).
+Take a look at the source on [GitHub](http://github.com/Troupe/faye-live-demo).
 
 TL;DR
 =====================
