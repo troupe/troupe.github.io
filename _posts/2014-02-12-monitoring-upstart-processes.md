@@ -11,7 +11,7 @@ We love writing node.js applications, but like any real-world application, thing
 
 ## node.js crashes
 
-We wanted was a way of detecting process crashes and reporting the state of the server immediately after the process terminated.
+We wanted a way of detecting process crashes and reporting the state of the server immediately after the process terminated.
 
 Upstart's `respawn` option immediately restarts our services on termination, but it doesn't have an easy way of executing a script when the process terminated abnormally. And although the `post-stop` script executes, its not possible to tell whether the shutdown is due to a planned service shutdown or a crash.
 
