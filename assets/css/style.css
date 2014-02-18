@@ -90,7 +90,15 @@ h1 i, h2 i, h3 i, h4 i, h5 i {
 	 height: 64px;
 	 background-size: cover;
 	 background-image: url('/assets/img/engineering-logo-64.png');
+	 margin-bottom: 16px;
 }
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+	#logo {
+		background-image: url('/assets/img/engineering-logo-64@2x.png');
+	}
+}
+
 
 .trpAddress {
 	color: rgb(218, 218, 218);
