@@ -7,7 +7,7 @@ title: Monitoring node.js upstart processes
 
 # Using upstart to detect node.js app crashes
 
-We love writing node.js applications, but like any real-world application, things  occassionally go wrong. Nine times out of ten, this is down to an unhandled exception in node.js (although we're seeing a lot less of these since we started using promises extensively).
+Here at <a href="https://gitter.im" target="_blank">Gitter</a> we love writing node.js applications, but like any real-world application, things  occassionally go wrong. Nine times out of ten, this is down to an unhandled exception in node.js (although we're seeing a lot less of these since we started using promises extensively).
 
 ## node.js crashes
 
