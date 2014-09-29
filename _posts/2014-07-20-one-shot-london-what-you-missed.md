@@ -8,6 +8,7 @@ Ghost written by [Andy Trevorah](https://twitter.com/andytrevorah).
 
 # Using Node.js for Everything
 ![](https://avatars1.githubusercontent.com/u/354440?s=250)
+<!--more-->
 <br>
 [Charlie Key](https://twitter.com/zwigby) burns through his jetlag to give a talk on how in 2010 he and 2 other cofounders started messing with node. They created a full javascript multiplayer game (tic-tac-together) in node 0.6.8 which ended up having an uptime of 2 years (!). The ability to quickly develop apps and services led to the creation of [Modulus](https://modulus.io) (one of the sponsors of the event). Their growth taught them some valuable lessons:
 
