@@ -4,7 +4,7 @@ title: 'One Shot London: What you missed'
 date: '2014-07-20 20:11:36'
 ---
 
-by [Andy Trevorah](https://twitter.com/andytrevorah).
+by [Andy Trevorah](https://twitter.com/trevorah).
 
 # Using Node.js for Everything
 ![](https://avatars1.githubusercontent.com/u/354440?s=250)
