@@ -2,28 +2,28 @@
 layout: layout
 title: "Gitter Blog"
 ---
-
 <section class="content">
   <ul class="listing">
     {% for post in paginator.posts %}
-      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-      {{ post.excerpt }}
-      <a href="{{ post.url }}">Read More</a>
+      <li>
+        <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+        {{ post.excerpt }}
+        <a href="{{ post.url }}">Read More... &rarr;</a>
+      </li>
+      <hr/>
     {% endfor %}
   </ul>
 </section>
-
-
 <nav id="pagination">
-{% if paginator.previous_page %}
-  {% if paginator.previous_page == 1 %}
-  <a href="/" title="Previous Page">&laquo; Previous</a>
-  {% else %}
-  <a href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Previous</a>
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+    <a href="/" title="Previous Page">&laquo; Previous</a>
+    {% else %}
+    <a href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Previous</a>
+    {% endif %}
   {% endif %}
-{% endif %}
 
-{% if paginator.next_page %}
-<a href="/page{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a>
-{% endif %}
+  {% if paginator.next_page %}
+    &nbsp;<a href="/page{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a>
+  {% endif %}
 </nav>

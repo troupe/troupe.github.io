@@ -10,15 +10,15 @@ Today, we introduced a major feature to **[Gitter](https://gitter.im)** called *
 
 Want a devops room? A design room? A watercooler? A London office room? Want an invite-only room with a few people in it? Channels are your friend.
 
-If you reload Gitter, you'll notice a new button at the bottom left of the screen titled **Create a room**. 
-
-Click that and you'll have the choice of creating a new channel or a repository chat room. 
+If you reload Gitter, you'll notice a new button at the bottom left of the screen titled **Create a room**.
+<!--more-->
+Click that and you'll have the choice of creating a new channel or a repository chat room.
 
 ![channels screenshot](/images/2014/May/channels--1-.jpg)
 
-You can then pick the owner of the channel (yourself or an organisation) and choose the name of the room and what permissions you'd like on the room. 
+You can then pick the owner of the channel (yourself or an organisation) and choose the name of the room and what permissions you'd like on the room.
 
-We'll be adding further improvements to channels very soon. This will include allowing them to be shown to your organisation so that people can discover them easily. 
+We'll be adding further improvements to channels very soon. This will include allowing them to be shown to your organisation so that people can discover them easily.
 
 You'll also notice now, in any room, you can add people to a room by clicking on the settings cog and choosing **Add people to this room**.
 

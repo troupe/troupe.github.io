@@ -12,7 +12,7 @@ Why LiveCollections?
 real-time Live Collection capabilities to enable realtime push in Backbone collections.
 
 __Our aim: create a real-time drop-in replacement for Backbone collections that plays nicely with Node.js__
-
+<!--more-->
 We were already using Mongoose.js for Mongo persistence, so it made sense for us to leverage the Mongoose middleware concept to generate CRUD notifications.
 
 Our initial implementation used the now-defunct now.js for realtime client notifications, but we switched to Faye as our requirements became clearer.

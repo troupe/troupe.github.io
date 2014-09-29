@@ -4,7 +4,7 @@ title: Limited beta launch FTW!
 date: '2013-11-29 15:14:25'
 ---
 
-Hello 
+Hello
 
 Exactly two weeks ago we posted a textbook lean startup product page thing on HackerNews. The response was pretty sweet, we had thousands of people letting us know they were interested in a chat product built around GitHub. Even in meatspace around Silicon Roundabout people were excited about the concept.
 
@@ -14,7 +14,7 @@ We still have a bunch of features to build and some adjustments to make, but rat
 
 ##How the limited beta works
 Normally, anybody who's on Gitter can create chat rooms and invite people. During our beta, only a limited number of people will be able to create chats. By sharing the chat anyone can join so you won't be sitting around talking to yourself, unless you want to.
-
+<!--more-->
 Joiners can participate in the chat, but won't be able to create new chats themselves until they are put on the limited beta list. We will add people to this list every day using a complex algorithym commonly known as FIFO.  We may accept kind words and bribes to modify this complex formula.
 
 ##Features at launch
@@ -68,7 +68,7 @@ Any comments, you can hit us up on multiple places on the internets.
 We'll also open up a public room on Gitter soon so you can chat with us.
 
 ##You're all awesome
-Finally, thanks so much to everyone who helped make this happen. We couldn't have shipped this without your enthusiasm. 
+Finally, thanks so much to everyone who helped make this happen. We couldn't have shipped this without your enthusiasm.
 
 ##And now, the link
 In case you didn't have it already.

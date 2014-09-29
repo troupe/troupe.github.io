@@ -4,12 +4,12 @@ title: 'LXJS Day 1: What you missed'
 date: '2014-06-28 09:53:10'
 ---
 
-Ghost written by [Andy Trevorah](https://twitter.com/andytrevorah)
+by [Andy Trevorah](https://twitter.com/andytrevorah)
 
 # Keynote: Componentize the web!
 <iframe width="560" height="315" src="//www.youtube.com/embed/GOPXVLxp9Nc" frameborder="0" allowfullscreen></iframe>
 [Addy Osmani](http://twitter.com/addyosmani) kicks off the event with a back to basics html concept known as Web Components, which are a new set of web platform features that enable developers to build applications in a declarative, composable way. He also mentions the [Polymer library](http://www.polymer-project.org/) that helps us achieve this now, and gave some cheeky examples of it in action.
-
+<!--more-->
 # Audio for the masses
 <iframe width="560" height="315" src="//www.youtube.com/embed/Bqj9LDszlDY" frameborder="0" allowfullscreen></iframe>
 [Soledad Penadés](http://twitter.com/supersole) starts what seems to be a trend of revealing how the speaker first got into technology. Her story started when she was a child with a passion for music, but without a music teacher. Technology helped to fill the gaps which then led to her experiments with the web audio api. After showing some simple ways to create music, things get interactive with some awesome synthesiser demos. She then takes things full circle by focusing on how these tools could have helped her out when she was a kid, and how it's our responsibility to make sure this happens to the next generation.

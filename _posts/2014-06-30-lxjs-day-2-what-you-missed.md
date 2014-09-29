@@ -4,14 +4,14 @@ title: 'LXJS Day 2: What you missed'
 date: '2014-06-30 11:04:36'
 ---
 
-Ghost written by [Andy Trevorah](http://twitter.com/andytrevorah).
+by [Andy Trevorah](http://twitter.com/andytrevorah).
 
 Missed day 1 as well? Read about it [here](http://blog.gitter.im/lxjs-day-1-what-you-missed).
 
 # Keynote: Internet of Nothings
 <iframe width="560" height="315" src="//www.youtube.com/embed/AAxqMVgeJy4" frameborder="0" allowfullscreen></iframe>
 [Jonathan Lipps](http://twitter.com/jlipps) kicks off day two with some thought provoking observations on technology's role in our lives. He begins by touching on Albert Borgmann's ideas on the device paradigm and showing the separation between mechanism and product. This separation sadly leads to knowledge being lost as the mechanism becomes more complex. He then goes into Jaron Lanier's work by showing that we are not a vector of statistics before ending his talk with a heartfelt song with some help from the audience.
-
+<!--more-->
 # Atom.io
 <iframe width="560" height="315" src="//www.youtube.com/embed/DyFdr9zVPHE" frameborder="0" allowfullscreen></iframe>
 [Kevin Sawicki](http://twitter.com/kevinsawicki) addresses the current state of the atom editor. He shows how it uses [Atom Shell](https://github.com/atom/atom-shell) instead of node-webkit, and how even though official support for anything other than osx will be coming in a couple of weeks, 10% of all files opened have been opened in these unsupported operating systems. He covers some of the neat features of atom before getting to atoms performance focus that will carry on for the next 2-4 months. One of the big changes is that the editor is being completely rewritten in React, and this is actually available now via a flag in the settings.

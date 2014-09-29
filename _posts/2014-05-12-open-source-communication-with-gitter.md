@@ -10,9 +10,9 @@ As we're approaching 5,000 public chat rooms on [Gitter](https://gitter.im), we 
 
 The guys over at [Marionette.js](http://marionettejs.com/) have been using Gitter for some time now. They use two different chat rooms in order to separate conversations between core team members and general discussion and support about Marionette. (Mild disclaimer: we use Marionette ourselves and absolutely love it.)
 
-Marionette have an [organisation](https://github.com/marionettejs) on GitHub. As Gitter provides any organisation a free private chat room, the team can discuss and co-ordinate the core of the project here by adding key contributors as members of the GitHub organisation. 
-
-Using a public repository as the basis for a [public room](https://gitter.im/marionettejs/backbone.marionette) allows the wider community to participate in discussions and seek out support. 
+Marionette have an [organisation](https://github.com/marionettejs) on GitHub. As Gitter provides any organisation a free private chat room, the team can discuss and co-ordinate the core of the project here by adding key contributors as members of the GitHub organisation.
+<!--more-->
+Using a public repository as the basis for a [public room](https://gitter.im/marionettejs/backbone.marionette) allows the wider community to participate in discussions and seek out support.
 
 This model isn't always possible. For instance if a corporate organisation owns the repository on GitHub, you may not wish to use your organisation room. Fear not, you can quite easily create free public channels on Gitter to achieve the same thing. You could, for example, create a public channel called ```Initech/ProjectX/core``` for your core team. Alternatively, you could easily create an organisation on GitHub and use that as the basis of the room if you'd prefer for the conversation to be private or invite only
 
@@ -29,7 +29,7 @@ We saw this great idea recently. [Inkling's](https://github.com/inkling) [Sublim
 
 #### Talk code
 
-If you ever pop into [Webpack's](https://github.com/webpack/webpack) room, you'll notice that this community is constantly sharing code. One of the very first features we built at Gitter was full markdown support in chat. By using ``` codepens you're able to get full syntax highlighting in your messages. 
+If you ever pop into [Webpack's](https://github.com/webpack/webpack) room, you'll notice that this community is constantly sharing code. One of the very first features we built at Gitter was full markdown support in chat. By using ``` codepens you're able to get full syntax highlighting in your messages.
 
 Let us know the weird and wonderful ways you are using Gitter, as well as any other tools for collaboration on your open source projects and we'll update this blog post with your suggestions.
 

@@ -13,14 +13,48 @@ Website: http://htmlstream.com/preview/unify
 	border-radius:0 !important;
 }
 
+iframe, img {
+	max-width: 100%;
+}
+
 body {
     padding:0;
+    font-size: 16px;
 	color:#333;
     font-size:13px;
     line-height:1.6;
 	font-family:'Arial';
     -webkit-font-smoothing:antialiased;
 	background:#fff url("../img/bg.png");
+}
+
+.listing li {
+	list-style: none;
+}
+
+.logo_svg {
+	width: 40px;
+	height: 68px;
+	fill: #666;
+	float: left;
+	padding-right: 1.25em;
+}
+
+header {
+	max-width: 1170px;
+	padding: 2.4em 1.875em;
+	margin: 0 auto;
+	height: 68px;
+	line-height: 68px !important;
+}
+
+header a {
+	display: inline-block;
+}
+
+header h1 {
+	line-height: 68px;
+	float: left;
 }
 
 p, a, li {

@@ -6,6 +6,6 @@ description: Gitter Blog
 twitter: gitchat
 github: gitterHQ
 gravatar_url: http://gravatar.com/avatar/3af08c35936d0088e67fe7cd33bb61f0
-paginate: 10
-excerpt_separator: <!--more-->"  # you can specify your own separator, of course.
+paginate: 7
+excerpt_separator: <!--more-->  # you can specify your own separator, of course.
 

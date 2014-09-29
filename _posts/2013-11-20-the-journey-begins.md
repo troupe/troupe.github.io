@@ -9,7 +9,7 @@ What a remarkable few days it has been. Last Friday we [posted](https://news.yco
 We quickly shot to #1 on HN and over the course of a few hours recieved over 30,000 visits to [gitter.im](http://gitter.im).
 
 The message was received loud and clear. On Monday we started full steam ahead building Gitter.
-
+<!--more-->
 ## Background
 For much of this year we've been developing [Troupe](http://trou.pe), a chat product for teams and businesses. Whilst building GitHub integration into Troupe we started wondering what the product might look like if it was built on top of GitHub rather than merely providing some light integration.
 

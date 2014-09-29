@@ -4,14 +4,14 @@ title: 'One Shot London: What you missed'
 date: '2014-07-20 20:11:36'
 ---
 
-Ghost written by [Andy Trevorah](https://twitter.com/andytrevorah).
+by [Andy Trevorah](https://twitter.com/andytrevorah).
 
 # Using Node.js for Everything
 ![](https://avatars1.githubusercontent.com/u/354440?s=250)
-<!--more-->
+
 <br>
 [Charlie Key](https://twitter.com/zwigby) burns through his jetlag to give a talk on how in 2010 he and 2 other cofounders started messing with node. They created a full javascript multiplayer game (tic-tac-together) in node 0.6.8 which ended up having an uptime of 2 years (!). The ability to quickly develop apps and services led to the creation of [Modulus](https://modulus.io) (one of the sponsors of the event). Their growth taught them some valuable lessons:
-
+<!--more-->
 * Let a process crash (but use `pm2` or `forever`)
 * Find issues with `node-inspector`
 * not everyone uses semantic versioning, you may need to be stricter with your dependencies
@@ -24,7 +24,7 @@ Ghost written by [Andy Trevorah](https://twitter.com/andytrevorah).
 <br>
 [Owen Barnes](https://twitter.com/temporalwave) starts his journey with an idea he had in 2010 - single page apps and websockets and the future, so why not combine them? He ended up creating [SocketStream](http://socketstream.com/). This was his first big opensource offering, and people loved it! Stars, pull-requests and tweets came flooding in, but something started to go wrong. When the project started, it was opinionated (stylus for styles, redis for state), but people used other tools, and so they sent pull requests adding support for them. Who could say no to that? Sadly the vision became diluted, the project became bloated, and it was no longer fun. Sure people liked it, but noone *loved* it anymore. Owen explained his 5 big lessons:
 
-1. Know what you're building. Is it a tool or experience? Tools should do one thing well, experiences needs to be opinionated with one way to do everything. 
+1. Know what you're building. Is it a tool or experience? Tools should do one thing well, experiences needs to be opinionated with one way to do everything.
 2. Know who you're building for.
 3. Know why you're building it.
 4. Know your strengths.

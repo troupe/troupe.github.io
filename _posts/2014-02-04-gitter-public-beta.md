@@ -8,9 +8,9 @@ date: '2014-02-04 11:53:15'
 
 ## TL;DR: Check out [gitter.im](https://gitter.im)
 
-We love chat. We've been using chat in various forms since the 90's. IRC, done it. ICQ, been there. Skype, worked there. So much chat, yet still we couldn't help feeling an itch that wouldn't scratch. 
+We love chat. We've been using chat in various forms since the 90's. IRC, done it. ICQ, been there. Skype, worked there. So much chat, yet still we couldn't help feeling an itch that wouldn't scratch.
 
-We mostly talk about software. Why didn't our chat product understand us? 
+We mostly talk about software. Why didn't our chat product understand us?
 
 Gitter is chat built by people who make software for people who make software. It's deeply integrated with GitHub, it knows your team, understands your code and tracks your issues.
 
@@ -20,7 +20,7 @@ We'd love if you gave it a go and let us know how you get along.
 ####[https://gitter.im](https://gitter.im)
 
 ------
-
+<!--more-->
 ### How does it work?
 
 ![Gitter Screenshot](/images/2014/May/screenshot_small.png)
@@ -38,22 +38,22 @@ Gitter includes a number of unique features designed primarily for people who ma
 Ever wanted to talk about a little piece of code in chat and it looks completely aweful?
 
 ![Code snippet](/images/2014/May/helloWorld.png)
-	
+
 That's exactly how a piece of code looks like in Gitter. We support all markdown, so you can make your messages look just the way you want them to. With emoji to boot.
 
 ![Smile](/images/2014/May/smile.png)
 
 #### Issue mentions
-If you're in a repo chat room and you type **#** you'll get a typeahead list of that repo's issues. In chat, we'll fetch metadata around the issue, show it's status and a synposis of the issue so you don't need to jump out to another window to get the gist of what's being said. 
+If you're in a repo chat room and you type **#** you'll get a typeahead list of that repo's issues. In chat, we'll fetch metadata around the issue, show it's status and a synposis of the issue so you don't need to jump out to another window to get the gist of what's being said.
 
 ![Issue example](/images/2014/May/issue.png)
- 
+
 We will shortly be extending this by allowing you to type owner/repo#number in any chat room and getting the same information.
 
 #### Integrations
 Like us, you probably use other bits of software and services in your development environment. Those systems can often provide valuable context to conversations.
 
-We support activity feed integrations with GitHub, Jenkins, Travis, Trello and Sprintly. 
+We support activity feed integrations with GitHub, Jenkins, Travis, Trello and Sprintly.
 
 #### Minimal setup
 You don't need to rebuild any sort of contact list. By integrating with your organisations and repositories and the people involved with them, you can easily start chatting without having to create a whole new address book or set of permissions. We just inherit exactly what's in GitHub, job done.
