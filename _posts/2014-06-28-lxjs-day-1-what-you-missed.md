@@ -4,7 +4,7 @@ title: 'LXJS Day 1: What you missed'
 date: '2014-06-28 09:53:10'
 ---
 
-by [Andy Trevorah](https://twitter.com/andytrevorah)
+by [Andy Trevorah](https://twitter.com/trevorah_)
 
 # Keynote: Componentize the web!
 <iframe width="560" height="315" src="//www.youtube.com/embed/GOPXVLxp9Nc" frameborder="0" allowfullscreen></iframe>

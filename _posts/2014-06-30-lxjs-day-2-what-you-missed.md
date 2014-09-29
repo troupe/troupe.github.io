@@ -4,7 +4,7 @@ title: 'LXJS Day 2: What you missed'
 date: '2014-06-30 11:04:36'
 ---
 
-by [Andy Trevorah](http://twitter.com/andytrevorah).
+by [Andy Trevorah](http://twitter.com/trevorah_).
 
 Missed day 1 as well? Read about it [here](http://blog.gitter.im/lxjs-day-1-what-you-missed).
 
