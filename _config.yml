@@ -1,9 +1,10 @@
 pygments: true
-permalink: /posts/:title
-name: Gitter Engineering Blog
-url: http://gitterHQ.github.io
-description: Engineering stuff at Gitter.
+permalink: /:title
+name: Gitter Blog
+url: http://blog.gitter.im
+description: Gitter Blog
 twitter: gitchat
 github: gitterHQ
 gravatar_url: http://gravatar.com/avatar/3af08c35936d0088e67fe7cd33bb61f0
+paginate: 10
 

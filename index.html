@@ -1,14 +1,29 @@
 ---
 layout: layout
-title: "Gitter Engineering Blog"
+title: "Gitter Blog"
 ---
 
 <section class="content">
   <ul class="listing">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     <li>
       <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
     </li>
     {% endfor %}
   </ul>
 </section>
+
+
+<nav id="pagination">
+{% if paginator.previous_page %}
+  {% if paginator.previous_page == 1 %}
+  <a href="/" title="Previous Page">&laquo; Previous</a>
+  {% else %}
+  <a href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Previous</a>
+  {% endif %}
+{% endif %}
+
+{% if paginator.next_page %}
+<a href="/page{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a>
+{% endif %}
+</nav>
