@@ -4,7 +4,7 @@ title: Long live IRC!
 date: '2014-03-06 12:00:00'
 ---
 
-![crown](/content/images/2014/May/crown--1-.jpg)
+![crown](/images/2014/May/crown--1-.jpg)
 
 ###TL;DR Version
 Gitter is now available on [6667](https://irc.gitter.im). 

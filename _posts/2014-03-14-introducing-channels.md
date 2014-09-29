@@ -4,7 +4,7 @@ title: Introducing Channels
 date: '2014-03-14 13:04:49'
 ---
 
-![channels](/content/images/2014/May/cropcircles.jpg)
+![channels](/images/2014/May/cropcircles.jpg)
 
 Today, we introduced a major feature to **[Gitter](https://gitter.im)** called **Channels**. These are rooms about anything and don't have to map directly to something in GitHub.
 
@@ -14,7 +14,7 @@ If you reload Gitter, you'll notice a new button at the bottom left of the scree
 
 Click that and you'll have the choice of creating a new channel or a repository chat room. 
 
-![channels screenshot](/content/images/2014/May/channels--1-.jpg)
+![channels screenshot](/images/2014/May/channels--1-.jpg)
 
 You can then pick the owner of the channel (yourself or an organisation) and choose the name of the room and what permissions you'd like on the room. 
 

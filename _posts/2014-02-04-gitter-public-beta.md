@@ -4,7 +4,7 @@ title: Gitter Public Beta
 date: '2014-02-04 11:53:15'
 ---
 
-![Announcement](/content/images/2014/May/mic--1-.jpg)
+![Announcement](/images/2014/May/mic--1-.jpg)
 
 ## TL;DR: Check out [gitter.im](https://gitter.im)
 
@@ -23,7 +23,7 @@ We'd love if you gave it a go and let us know how you get along.
 
 ### How does it work?
 
-![Gitter Screenshot](/content/images/2014/May/screenshot_small.png)
+![Gitter Screenshot](/images/2014/May/screenshot_small.png)
 
 Gitter sits on top of GitHub allowing you to create chat rooms for your organisations and your repositories.
 
@@ -37,16 +37,16 @@ Gitter includes a number of unique features designed primarily for people who ma
 #### Markdown support in chat
 Ever wanted to talk about a little piece of code in chat and it looks completely aweful?
 
-![Code snippet](/content/images/2014/May/helloWorld.png)
+![Code snippet](/images/2014/May/helloWorld.png)
 	
 That's exactly how a piece of code looks like in Gitter. We support all markdown, so you can make your messages look just the way you want them to. With emoji to boot.
 
-![Smile](/content/images/2014/May/smile.png)
+![Smile](/images/2014/May/smile.png)
 
 #### Issue mentions
 If you're in a repo chat room and you type **#** you'll get a typeahead list of that repo's issues. In chat, we'll fetch metadata around the issue, show it's status and a synposis of the issue so you don't need to jump out to another window to get the gist of what's being said. 
 
-![Issue example](/content/images/2014/May/issue.png)
+![Issue example](/images/2014/May/issue.png)
  
 We will shortly be extending this by allowing you to type owner/repo#number in any chat room and getting the same information.
 

@@ -4,7 +4,7 @@ title: Drag and drop
 date: '2014-03-14 12:22:45'
 ---
 
-![drag racer](/content/images/2014/May/Blazing_Angel_Jet_Dragster--1-.jpg)
+![drag racer](/images/2014/May/Blazing_Angel_Jet_Dragster--1-.jpg)
 
 We've just launched the ability to drag and drop files into any chat room.
 

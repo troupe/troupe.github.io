@@ -4,7 +4,7 @@ title: Mac all the things!
 date: '2013-12-12 18:21:15'
 ---
 
-![](/content/images/2014/May/mac_app-2.png)
+![](/images/2014/May/mac_app-2.png)
 
 Yup, that's right, Gitter is now [available](https://gitter.im/apps) as a Mac app!
 
